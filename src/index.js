@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import './index.css';
+import './resources/styles.css';
 
-class App extends React.Component{
-    render(){
-        return(
-            <div>Hello World</div>
-        )
-    }
+import Header from './components/header_footer/Header'
+import Footer from './components/header_footer/Footer';
+
+class App extends React.Component {
+    render() {
+      return (
+        <div className="App">
+            <Header/>
+            <Footer/>
+        </div>
+    );
+  }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<App/>, document.getElementById('root'));
