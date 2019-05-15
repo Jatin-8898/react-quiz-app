@@ -1,0 +1,66 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.font_righteous {
+    font-family: 'Righteous', cursive;
+}
+
+/*====================
+        GENERAL CONSTANTS
+======================*/
+
+
+.bck_black {
+    background: #3c3c3c;
+}
+.bck_white {
+    background: #ffffff;
+}
+.bck_red {
+    background: #ff4800;
+}
+.bck_yellow {
+    background: #ffa800;
+}
+
+/*====================
+        HEADER
+======================*/
+
+
+header {
+    padding:10px 0px;
+    transition: all 300ms ease-in;
+}
+
+header .header_logo {
+    flex-grow: 1;
+}
+header .header_logo_venue {
+    font-size: 30px;
+}
+
+header .header_logo_title {
+    text-transform: uppercase;
+}
+
+
+/*====================
+        FOOTER
+======================*/
+
+footer {
+    padding:50px 0px;
+    text-align: center;
+    font-size: 60px;
+    color:#ffffff;
+    background: red;
+}
+
+footer .footer_copyright {
+    font-size: 18px;
+}
