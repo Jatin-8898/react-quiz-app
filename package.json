@@ -1,7 +1,7 @@
 {
   "name": "quiz",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple Quiz",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open"
@@ -12,8 +12,8 @@
       "@babel/preset-react"
     ]
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["quiz"],
+  "author": "Jatin Varlyani",
   "license": "ISC",
   "dependencies": {
     "react": "^16.8.6",
