@@ -1,35 +1,44 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
-import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
 
-//import SideDrawer from './SideDrawer';
 
-class Header extends Component {
+const styles = {
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginLeft: -18,
+    marginRight: 10,
+  },
+  color:{
+    backgroundColor: '#0094da',
+  },
+  whiteColor:{
+    color:'#fff',
+  }
+};
 
-    state = {
-		headerShow: true
-	}
-
-    render() {
-        return (
-        <AppBar
-            className="container-fluid"
-            position="fixed"
-            style={{
-                backgroundColor: this.state.headerShow ?'#24553' : 'transparent',
-                boxShadow:'none',
-                padding:'10px 0px'
-            }}
-        >
-            <Toolbar>
-                <div className="header_logo">
-                    <div className="font_righteous header_logo_venue">React Quiz</div>
-                </div>
-            </Toolbar>
-        </AppBar>
-        )
-    }
+function DenseAppBar(props) {
+  const { classes } = props;
+  return (
+    <div className={classes.root}>
+      <AppBar position="static" className={classes.color}> 
+        <Toolbar variant="dense">
+          <Typography variant="h6" className={classes.whiteColor}>
+            React Quiz
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
 }
-export default Header;
+
+DenseAppBar.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(DenseAppBar);
