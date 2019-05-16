@@ -48,6 +48,41 @@ header .header_logo_title {
     text-transform: uppercase;
 }
 
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.popup h1 {
+    background-color: #0094da;
+    color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.popup p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 20px 10% 0;
+}
+
+
 
 /*====================
         FOOTER
