@@ -259,3 +259,8 @@ footer {
 footer .footer_copyright {
     font-size: 18px;
 }
+
+.footer_copyright a{
+    text-decoration: none;
+    color:#0094da;
+}
