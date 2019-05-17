@@ -57,7 +57,7 @@ class Popup extends Component {
         return (
             <div className="popup-container" style={style}>
                 <div className="container">
-                    <div className="ml-5 col-md-10 col-8">
+                    <div className="ml-5 col-md-10 col-10">
                         <div className="popup">
                             <h1>{title}</h1>
                             <p dangerouslySetInnerHTML={this.createMarkup(text)} />
