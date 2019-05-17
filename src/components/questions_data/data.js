@@ -1,11 +1,11 @@
 export default [
     {
-        question: '. We can go for keys when there is possibility that our user could change the data?',
+        question: 'We can go for keys when there is possibility that our user could change the data?',
         answers: [
             'Keys',
-            'ref',
-            'both',
-            'none of above'
+            'Ref',
+            'Both',
+            'None of above'
         ],
         correct: 1
     },
