@@ -92,7 +92,7 @@ header .header_logo_title {
     background-color: #fff;
     border: 2px solid #3198ff;
     min-height: 70px;
-    width: 98%;
+    width: 100%;
     display: flex;
     margin-bottom: 30px;
     transition: color .3s ease, border-color .3s ease, transform .3s ease;
@@ -145,6 +145,10 @@ header .header_logo_title {
     border-color: #dc0a0a;
     color: #dc0a0a;
     background-color: #dc0a0a;
+    animation: shake 1.0s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
 }
 
 #answers li.wrong span {
@@ -159,6 +163,24 @@ header .header_logo_title {
 #submit {
     text-align: center;
     margin: 20px 0;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+}
 }
 
 .fancy-btn {
