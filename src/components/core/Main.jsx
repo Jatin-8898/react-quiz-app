@@ -94,7 +94,7 @@ class Main extends Component {
         />
         
         <div className="row">
-            <div className="col-lg-12 col-md-6">
+            <div className="col-lg-12 col-md-10">
                 <div id="question">
                     <h4 className="bg-light">Question {count}/{total}</h4>
                     <p>{question}</p>
