@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MyButton from '../util/MyButton.jsx';
+import Fade from 'react-reveal/Fade';
 class Popup extends Component {
     
     constructor(props) {
@@ -55,23 +56,25 @@ class Popup extends Component {
         let { style } = this.props;
         
         return (
-            <div className="popup-container" style={style}>
-                <div className="container">
-                    <div className="ml-5 col-md-10 col-10">
-                        <div className="popup">
-                            <h1>{title}</h1>
-                            <p dangerouslySetInnerHTML={this.createMarkup(text)} />
-                            <span onClick={this.popupHandle}>
-                                <MyButton
-                                    text={buttonText}
-                                    bck='#3198ff'
-                                    color='#fff'
-                                />
-                            </span>
+            <Fade delay={500}>
+                <div className="popup-container" style={style}>
+                    <div className="container">
+                        <div className="ml-5 col-md-10 col-10">
+                            <div className="popup">
+                                <h1>{title}</h1>
+                                <p dangerouslySetInnerHTML={this.createMarkup(text)} />
+                                <span onClick={this.popupHandle}>
+                                    <MyButton
+                                        text={buttonText}
+                                        bck='#3198ff'
+                                        color='#fff'
+                                    />
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </Fade>
         );
     }
 }
