@@ -9,6 +9,7 @@ class Answers extends Component {
         }
         
         this.checkAnswer = this.checkAnswer.bind(this);
+        this.clearClasses = this.clearClasses.bind(this);
     }
     
     checkAnswer(e) {
@@ -22,33 +23,30 @@ class Answers extends Component {
 
             if(answer === correct){
                 updatedClassNames[answer-1] = 'right';
-                this.setState({
-                    classNames: ['', '', '', '']
-                })
                 increaseScore();
             }
             else {
                 updatedClassNames[answer-1] = 'wrong';
-                this.setState({
-                    classNames: ['', '', '', '']
-                })
             }
             
             this.setState({
-                classNames: updatedClassNames
+                classNames: updatedClassNames,
+                
             })
 
-            this.props.showButton();
+            this.props.showButton();       
+            var myTime = setTimeout(() => {
+                this.clearClasses();
+                //console.log("IN SET Timeout")
+            }, 5000);
         }
     }
-    
-    /* shouldComponentUpdate() {
+    clearClasses(){
         this.setState({
             classNames: ['', '', '', '']
         })
-        return false
-      }  */
-
+        
+    }
     render() {
         let { answers } = this.props;
         let { classNames } = this.state;
