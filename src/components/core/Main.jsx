@@ -45,9 +45,9 @@ class Main extends Component {
             questionAnswered: true
         })
     }
-
+    
     nextQuestion() {
-        let { count, total, score } = this.state;
+        let { count, total} = this.state;
 
         if(count === total){
             this.setState({
@@ -73,11 +73,6 @@ class Main extends Component {
         this.setState({
             score: this.state.score + 1
         });
-    }
-    handleRemoveColor(){
-        this.setState({
-
-        })
     }
 
   render() {
