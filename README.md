@@ -1,8 +1,8 @@
-# 💎 React Quiz App
+#  React Quiz App 💎
 
-A Simple React Quiz App 
+A Simple React Quiz App which contains the 7 MCQ’s which have 4 options in each.
 
-## See it Live [HERE](https://quiz-app-jatin8898.herokuapp.com) 
+## See it Live [HERE](https://confident-mahavira-026626.netlify.com/) 
 
 ### Version
 1.0.0
@@ -19,7 +19,7 @@ git clone https://github.com/Jatin-8898/react-quiz-app.git
 $ npm install
 ```
 
-### :ballot_box_with_check: Run
+### ✔️ Run
 
 Then go to http://localhost:8000
 
