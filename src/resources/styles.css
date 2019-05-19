@@ -52,7 +52,7 @@ header .header_logo_title {
 ======================*/
 #question {
     margin-top: 100px;
-    background-color: #3198ff;
+    background-color: #F57C00;
     color: white;
     padding: 10px;
     text-align: center;
@@ -90,7 +90,7 @@ header .header_logo_title {
 
 #answers li {
     background-color: #fff;
-    border: 2px solid #3198ff;
+    border: 2px solid #FF9800;
     min-height: 70px;
     width: 100%;
     display: flex;
@@ -100,7 +100,7 @@ header .header_logo_title {
 }
 
 #answers li span {
-    background-color: #3198ff;
+    background-color: #FF9800;
     color: #fff;
     font-size: 30px;
     flex: 75px;
@@ -128,13 +128,13 @@ header .header_logo_title {
 }
 
 #answers li.right {
-    border-color: #1ea55b;
+    border-color: #4CAF50;
     color: #fff;
-    background-color: #1ea55b;
+    background-color: #4CAF50;
 }
 
 #answers li.right span {
-    background-color: #1ea55b;
+    background-color: #4CAF50;
 }
 
 #answers li.right p {
@@ -184,9 +184,9 @@ header .header_logo_title {
 }
 
 .fancy-btn {
-    border: 2px solid #3198ff;
+    border: 2px solid #FF9800;
     border-radius: 0;
-    background-color: #3198ff;
+    background-color: #FF9800;
     color: #fff;
     display: inline-block;
     font-size: 18px;
@@ -229,7 +229,7 @@ header .header_logo_title {
 }
 
 .popup h1 {
-    background-color: #0094da;
+    background-color: #FF9800;
     color: white;
     border-bottom: 1px solid #ccc;
     padding: 20px;
